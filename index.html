@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Survey Form</title>
+  </head>
+  <body>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-3 mx-auto">
+                <h1 id="title">Survey Form</h1>
+                <p class="mx-auto"id="description">Hi this is a Survey Form</p>
+            </div>
+        </div>
+      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <form id="survey-form" data-toggle="validator" role="form">
+                        <div class="form-group">
+                            <div class="input-group pt-4">
+                                <span class="input-group-text" id="name">Name</span>
+                                <input type="text" class="form-control" placeholder="Enter your name" autofocus required id="name-label">
+                            </div>
+                            <div class="input-group pt-3">
+                                <span class="input-group-text" id="email">Email</span>
+                                <input type="email" required class="form-control" placeholder="Enter your email" id="email-label">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="input-group pt-3">
+                                <span class="input-group-text" id="number">Age</span>
+                                <input min="1" max="150"type="number" class="form-control" placeholder="Enter your age" required id="number-label">
+                            </div>
+                            <div class="input-group pt-3">
+                                <span class="input-group-text" id="basic-addon1">Which option best describes your current role?</span>
+                                <select name="currentPos" id="dropdown" class="dropdown">
+                                    <option disabled>Select an Option</option>
+                                    <option value="student">Student</option>
+                                    <option value="student">Full-time Job</option>
+                                    <option value="student">Full-time Learner</option>
+                                    <option value="student">Prefer not to Say</option>
+                                    <option value="student">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="input-group pt-3">
+                                    <span class="input-group-text" id="basic-addon1">What do you like most about me</span>
+                                    <select name="currentPos" id="dropdown" class="dropdown">
+                                        <option disabled>Select an Option</option>
+                                        <option value="student">Looks</option>
+                                        <option value="student">Charisma</option>
+                                        <option value="student">Eyes</option>
+                                        <option value="student">Humor</option>
+                                        <option value="student">Other</option>
+                                    </select>
+                            </div>
+                            <div class="input-group pt-3">
+                                    <span id="basic-addon1">How likely is that you would recommend me to a friend?</span>
+                                    <ul style="list-style: none;">
+                                            <li class="radio">
+                                                <label>
+                                                    <input type="radio" name="radio-buttons" value="1">
+                                                    Definitely
+                                                </label>
+                                            </li>
+                                            <li class="radio">
+                                                <label>
+                                                    <input type="radio" name="radio-buttons" value="1">
+                                                    Maybe
+                                                </label>
+                                            </li>
+                                            <li class="radio">
+                                                <label>
+                                                    <input type="radio" name="radio-buttons" value="1">
+                                                    Not Sure
+                                                </label>
+                                            </li>
+                                    </ul>                             
+                            </div>
+                            <div class="input-group pt-3">
+                                    <span id="basic-addon1">Things that I should improve in the future</span>
+                                    <ul style="list-style: none;">
+                                            <li class="radio">
+                                                <label>
+                                                    <input type="checkbox" name="radio-buttons" value="1">
+                                                    Front End Development
+                                                </label>
+                                            </li>
+                                            <li class="radio">
+                                                <label>
+                                                    <input type="checkbox" name="radio-buttons" value="1">
+                                                    Back End Development
+                                                </label>
+                                            </li>
+                                            <li class="radio">
+                                                <label>
+                                                    <input type="checkbox" name="radio-buttons" value="1">
+                                                    Data Visualization
+                                                </label>
+                                            </li>
+                                            <li class="radio">
+                                                <label>
+                                                    <input type="checkbox" name="radio-buttons" value="1">
+                                                    Graphic Design
+                                                </label>
+                                            </li>
+                                            <li class="radio">
+                                                <label>
+                                                    <input type="checkbox" name="radio-buttons" value="1">
+                                                    Video Editing
+                                                </label>
+                                            </li>
+                                    </ul>                             
+                            </div>
+                            <div class="form-group">
+                                <label for="">Any Comments or Suggestions?</label>
+                                <textarea name="" id="" cols="10" rows="5" class="form-control rounded-0"></textarea>
+                            </div>
+                            <div class=" mx-auto">
+                                <button id="submit" type="submit" class="btn btn-success mx-auto">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Footer -->
+        <footer class="page-footer font-small blue-grey lighten-5">   
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center text-black-50 py-3">© April 29 2019 :
+          <a class="dark-grey-text" href="https://github.com/alaindimabuyo"> Alain Dimabuyo</a>
+        </div>
+        <!-- Copyright -->
+    
+      </footer>
+      <!-- Footer -->
+                </div>
+            </div>
+        </div>
+        
+
+       
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
